@@ -25,8 +25,10 @@ checkMultiplicity();
 
 const trianglePossibility = function(firstSide, secondSide, thirdSide) {
   if (isNaN(firstSide - secondSide - thirdSide)){
-  return firstSide > secondSide + thirdSide && secondSide > firstSide + thirdSide && thirdSide > firstSide + secondSide;
+  firstSide > secondSide + thirdSide && secondSide > firstSide + thirdSide && thirdSide > firstSide + secondSide;
+  return true;
   }
+  return false;
 };
 trianglePossibility();
 
