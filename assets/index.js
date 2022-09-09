@@ -34,4 +34,14 @@ trianglePossibility();
 
 // 4th task
 
+const summOfOddNumbers = function(number) {
+  let tempValue = 0;
+  for (i = 1; i <= number; i+=2){
+    tempValue += i;
+    }
+  return tempValue;
+};
+
+summOfOddNumbers();
+
 
