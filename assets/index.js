@@ -11,19 +11,16 @@ isAdult();
 
 // 2-nd task
 
-// const num1 = prompt('Enter first number');
-// const num2 = prompt('Enter second number');
-// let checkMultiplicity = function(num1, num2) {
-//   let check = +num1 % +num2;
-// if( check !== 0 ) {
-//   checkMultiplicity = true;  
-//   } else {
-//     checkMultiplicity = false;
-//   }
-//   return console.log(check);
-// }
+const checkMultiplicity = function(number1, number2) {
+  if( isNaN(number1 - number2)) {
+    number1 % number2 === 0;
+    return true;
+  }else {
+  return false;
+  }
+}
 
-// checkMultiplicity();
+checkMultiplicity();
 
 // 3rd task
 
