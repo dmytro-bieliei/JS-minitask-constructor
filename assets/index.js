@@ -6,7 +6,7 @@ const isAdult = function(age) {
   } else {
     return false;
   }
-}
+};
 isAdult();
 
 // 2-nd task
@@ -18,26 +18,20 @@ const checkMultiplicity = function(number1, number2) {
   }else {
   return false;
   }
-}
-
+};
 checkMultiplicity();
 
 // 3rd task
 
-// const firstSide = +prompt(' Enter first triangle side lenght');
-// const secondSide = +prompt(' Enter second triangle side lenght');
-// const thirdSide = +prompt(' Enter third triangle side lenght');
+const trianglePossibility = function(firstSide, secondSide, thirdSide) {
+  if (isNaN(firstSide - secondSide - thirdSide)){
+  return firstSide > secondSide + thirdSide && secondSide > firstSide + thirdSide && thirdSide > firstSide + secondSide;
+  }
+};
+trianglePossibility();
 
-// const trianglePossibility = function(firstSide, secondSide, thirdSide) {
-//   if (firstSide > (secondSide + thirdSide)) {
-//     trianglePossibility = true;
-//   } if (secondSide > (firstSide + thirdSide) ) {
-//     trianglePossibility = true;
-//   } if (thirdSide > (firstSide + secondSide)) {
-//     trianglePossibility = true;
-//   } else {
-//     trianglePossibility = false;
-//   }
-//   return alert(trianglePossibility);
-// }
-// trianglePossibility();
+// Always false ?
+
+// 4th task
+
+
