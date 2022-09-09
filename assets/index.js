@@ -44,4 +44,18 @@ const summOfOddNumbers = function(number) {
 
 summOfOddNumbers();
 
+// fifth task
 
+const primeNumber = function(value) {
+  if ( isNaN(value)){
+    return null;
+  }
+  for(let i = 2; i < value; i++){
+    if(value % i === 0){
+      return false;
+    }
+  }
+  return true;
+}
+
+primeNumber();
