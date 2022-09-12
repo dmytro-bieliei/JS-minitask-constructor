@@ -1,63 +1,30 @@
-// 1-st task
+'use strict';
 
-const isAdult = function(age) {
-  if ( age > 17 ) {
-    return true;
-  } else {
-    return false;
-  }
-};
-isAdult();
-
-// 2-nd task
-
-const checkMultiplicity = function(number1, number2) {
-  if( isNaN(number1 - number2)) {
-    number1 % number2 === 0;
-    return true;
-  }else {
-  return false;
-  }
-};
-checkMultiplicity();
-
-// 3rd task
-
-const trianglePossibility = function(firstSide, secondSide, thirdSide) {
-  if (isNaN(firstSide - secondSide - thirdSide)){
-  firstSide > secondSide + thirdSide && secondSide > firstSide + thirdSide && thirdSide > firstSide + secondSide;
-  return true;
-  }
-  return false;
-};
-trianglePossibility();
-
-// Always false ?
-
-// 4th task
-
-const summOfOddNumbers = function(number) {
-  let tempValue = 0;
-  for (i = 1; i <= number; i+=2){
-    tempValue += i;
-    }
-  return tempValue;
+function User(firstName, lastName, email, age, isLoggedIn){
+  this.firstName = firstName;
+  this.lastName = lastName;
+  this.email = email;
+  this.age = age;
+  this.isLoggedIn = isLoggedIn;
 };
 
-summOfOddNumbers();
+const userProto = {
+  getFullName: function( user ){
+    console.log(`${user} full name is ${this.firstName} ${this.lastName}`);
+  },
+};
+  
+User.prototype = userProto;
 
-// fifth task
+const user1 = new User('Dmytro', 'Bieliei', 'dmbieliei@gmail.com', '32', true);
+const user2 = new User('Ivan', 'Radkin', 'radkin@gmain.com', '46', false);
+const user3 = new User('Marina', 'Savitska', 'nolik@i.ua', '23', true);
 
-const primeNumber = function(value) {
-  if ( isNaN(value)){
-    return null;
-  }
-  for(let i = 2; i < value; i++){
-    if(value % i === 0){
-      return false;
-    }
-  }
-  return true;
-}
 
-primeNumber();
+
+
+
+
+
+
+
